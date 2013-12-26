@@ -162,14 +162,13 @@ function endReload()
 		reloadStarted = false
 	end
 end
-addEvent("onClientPlayerFinishReload", true)
-addEventHandler("onClientPlayerFinishReload", localPlayer, endReload)
 addEventHandler("onClientPlayerSpawn", localPlayer, endReload)
 
 function beginReload()
-	if not reloadStarted then
+	if (not reloadStarted) or (not isPedInVehicle(localPlayer)) then
 		reloadStarted = true
+		setTimer(function() endReload() end, 1500, 1)
 	end
 end
-addEvent("onClientPlayerStartReload", true)
-addEventHandler("onClientPlayerStartReload", localPlayer, beginReload)
+addCommandHandler("reload",beginReload)
+bindKey("r","down",reloadWeapon)
