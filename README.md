@@ -2,17 +2,17 @@ MTA Grenade Launcher
 =============
 Features
 --------
-Grenade launcher resource for MTA San Andreas.
-
-Aim with your AK-47, and press E to fire a grenade. Grenades explode on contact and you need to reload between each round you fire.
-
-MODIFIED RELOAD RESOURCE IS NO LONGER REQUIRED FOR GLAUNCHER TO RUN.
+* Aim with the weapon specified in the script, and press E to fire a grenade. By default, grenades explode on contact and you need to reload between each round you fire.
+* To get the reload system to work, the reload resource was slightly modified, and is included in the script.
+* Many options such as but not limited to: contact explosion, launch speed, grenade model, weapon lock, team lock; are available for you to modify in the script file. You can find detailed explanations in the script.
+* MODIFIED RELOAD RESOURCE IS NO LONGER REQUIRED FOR GLAUNCHER TO RUN.
 
 Todo
 --------
-* Add proper class / team / ACL group protection
+* Rewrite class / team / ACL group protection
 * Add proper ammo limitation and calculation
-* Add proper out-of-ammo messaging
+* Add ammo etc. display
+* Add exports for feature management to replace script configuration
 
 Known Bugs
 --------
