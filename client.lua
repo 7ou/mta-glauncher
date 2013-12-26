@@ -171,4 +171,4 @@ function beginReload()
 	end
 end
 addCommandHandler("reload",beginReload)
-bindKey("r","down",reloadWeapon)
+bindKey("r","down",beginReload)
