@@ -3,7 +3,6 @@ MTA Grenade Launcher
 Features
 --------
 * Aim with the weapon specified in the script, and press E to fire a grenade. By default, grenades explode on contact and you need to reload between each round you fire.
-* To get the reload system to work, the reload resource was slightly modified, and is included in the script.
 * Many options such as but not limited to: contact explosion, launch speed, grenade model, weapon lock, team lock; are available for you to modify in the script file. You can find detailed explanations in the script.
 * MODIFIED RELOAD RESOURCE IS NO LONGER REQUIRED FOR GLAUNCHER TO RUN.
 
