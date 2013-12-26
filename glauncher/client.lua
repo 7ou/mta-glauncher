@@ -1,5 +1,5 @@
 -- CONFIGURATION VARIABLES FOR YOU TO EDIT
-local teamLock = true -- True locks the launcher to the teams listed below, false allows everyone to use it
+local teamLock = false -- True locks the launcher to the teams listed below, false allows everyone to use it
 local teams = {"Army", "Police", "Admin"} -- These are the teams that will be allowed to use the grenade launcher if you activate teamlock
 local guns = {30, 31} -- These are the guns that have grenade launcher function, I suggest not using any melee shit ;)
 local nadeModel = nil -- You can change this to an object ID to change the grenade model with that model. nil is the normal grenade model.
