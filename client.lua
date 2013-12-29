@@ -9,6 +9,7 @@ local consumeNades = true -- True for the launcher to consume player's grenade a
 local fireKey = "e" -- The key binding that should fire the grenade
 local explodeOnContact = true -- Should the grenade explode on contact or should it wait for its normal explosion time? Normal is a bit less straining.
 local contactThreshold = 0.1 -- The change in velocity, past which, the grenade will be considered in contact and blown up. Do not touch this if you don't know what I mean.
+local reloadTime = 1.5 -- Time after the reload starts until the reload is completed, in seconds
 local debugMode = false -- A display in the middle of the screen that shows you change in velocity in each frame. Enable for debugging use only.
 -- END OF CONFIGURATION VARIABLES
 
@@ -167,7 +168,7 @@ addEventHandler("onClientPlayerSpawn", localPlayer, endReload)
 function beginReload()
 	if (not reloadStarted) or (not isPedInVehicle(localPlayer)) then
 		reloadStarted = true
-		setTimer(function() endReload() end, 1500, 1)
+		setTimer(function() endReload() end, reloadTime * 1000, 1)
 	end
 end
 addCommandHandler("reload",beginReload)
