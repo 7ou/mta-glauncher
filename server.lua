@@ -1,3 +1,7 @@
+--[[
+This Script made  by Funstein
+--]]
+
 function firedNade()
 	if client then
 		if getPedWeapon(client, 8) == 16 then
